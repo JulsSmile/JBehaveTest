@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Lookup a definition","Looking up the definition of 'apple'","ERROR","2019-09-17T13:43:12.361088+03:00[Europe/Helsinki]","0.0","2.35"
+"Lookup a definition","Looking up the definition of 'pear'","ERROR","2019-09-17T13:43:15.3313433+03:00[Europe/Helsinki]","0.0","1.07"

@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: BDDTest.AcceptanceTestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 2, Skipped: 4, Time elapsed: 11.007 s <<< FAILURE! - in BDDTest.AcceptanceTestSuite
+Given the user is on the Wikionary home page(BDDTest.steps.DefinitionSteps)  Time elapsed: 2.134 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases). See below for more details.
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+
+Given the user is on the Wikionary home page​(BDDTest.steps.DefinitionSteps)  Time elapsed: 0.907 s  <<< ERROR!
+net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.firefox.FirefoxDriver
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+Caused by: net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate new WebDriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases). See below for more details.
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+Caused by: java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at BDDTest.steps.DefinitionSteps.givenTheUserIsOnTheWikionaryHomePage(DefinitionSteps.java:17)
+

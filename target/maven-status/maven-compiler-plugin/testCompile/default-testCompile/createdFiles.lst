@@ -1,0 +1,4 @@
+BDDTest\steps\serenity\EndUserSteps.class
+BDDTest\steps\DefinitionSteps.class
+BDDTest\AcceptanceTestSuite.class
+BDDTest\pages\DictionaryPage.class
