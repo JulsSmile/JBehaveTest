@@ -13,12 +13,48 @@
 </lifecycle>
 <scenario keyword="Scenario:" title="Looking up the definition of &apos;apple&apos;">
 <step outcome="successful">Given the user is on the Wikionary home page</step>
-<step outcome="successful">When the user looks up the definition of the word &apos;apple&apos;</step>
-<step outcome="successful">Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;</step>
+<step outcome="failed" keyword="FAILED">When the user looks up the definition of the word &apos;apple&apos;<failure>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;</step>
+<failure>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilEnabled(WebElementFacadeImpl.java:1005)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementAvailable(WebElementFacadeImpl.java:837)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:718)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy23.type(Unknown Source)
+	at BDDTest.pages.DictionaryPage.enter_keywords(DictionaryPage.java:25)
+	at BDDTest.steps.serenity.EndUserSteps.enters(EndUserSteps.java:17)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187.CGLIB$enters$2(&lt;generated&gt;)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187$$FastClassByCGLIB$$458d1948.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187.enters(&lt;generated&gt;)
+	at BDDTest.steps.serenity.EndUserSteps.looks_for(EndUserSteps.java:37)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187.CGLIB$looks_for$1(&lt;generated&gt;)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187$$FastClassByCGLIB$$458d1948.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:478)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:463)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:438)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:179)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:166)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:72)
+	at BDDTest.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$2afc1187.looks_for(&lt;generated&gt;)
+	at BDDTest.steps.DefinitionSteps.whenTheUserLooksUpTheDefinitionOf(DefinitionSteps.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:790)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:349)
+...</failure>
 </scenario>
 <scenario keyword="Scenario:" title="Looking up the definition of &apos;pear&apos;">
-<step outcome="successful">Given the user is on the Wikionary home page</step>
-<step outcome="successful">When the user looks up the definition of the word &apos;pear&apos;</step>
-<step outcome="successful">Then they should see the definition &apos;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&apos;</step>
-</scenario>
-</story>
